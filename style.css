@@ -1,3 +1,4 @@
+@media only screen and (min-width:901px){
 body{
     background-color: hsl(229, 57%, 11%);
     font-family: 'Raleway', sans-serif;
@@ -103,7 +104,7 @@ body{
     background-color: hsl(228, 56%, 26%);
     color: white;
     border-radius: 5px;
-    width: 40%;
+    width: 600px;
 }
 .loading-container{
     position: relative;
@@ -128,4 +129,127 @@ body{
 }
 .clear{
     clear: both;
+}
+}
+@media only screen and (max-width:900px){
+    body{
+        background-color: hsl(229, 57%, 11%);
+        font-family: 'Raleway', sans-serif;
+        background-image: url(images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom ;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        resize: both;
+        overflow: auto;
+        height:100vh;
+        width: 60vw;
+    }
+    
+    .Fylo-container{
+        place-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        background-color: hsl(228, 56%, 26%);
+        border-radius: 5px 100px 5px 5px;
+        padding: 2rem 7rem 2rem 2rem;
+        margin-bottom: 2rem;
+        width: 200px;
+    }
+    .Fylo-container img{
+        width: 70%;
+    }
+    .btn-Fylo{
+        display: flex;
+        flex-direction: row ;
+        margin-top: 1.2rem;
+    }
+    .btn-Fylo img{
+        transform: scale(1.1,1.3);
+    }
+    .btn-Fylo button{
+        padding: 0.6rem;
+        margin-right: 12px;
+        border-radius: 8px;
+        background-color:  hsl(229, 57%, 11%);
+        border: none ;
+    }
+    .btn-Fylo button:hover{
+        background-color:#16115B;
+    }
+    .messege{
+        background-color: white;
+        padding: 10px;
+        border-radius: 7px 7px 7px 7px;
+        position: absolute;
+        bottom: -156px;
+        left: 29%;
+        width: 120px;
+    }
+    .messege-container{
+        position: relative;
+    }
+    .messege h4{
+        font-weight: 700;
+        font-size: xx-large;
+        display: inline;
+        margin-right: 4px;
+    }
+    .messege p{
+        display: inline;
+        font-size: x-small;
+        color:hsl(229, 7%, 55%);
+    }
+    .circle{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        z-index: 1;
+        left: 67.9%;
+        top: 18.6%;
+        border-radius: 50%;
+    }
+    .Data-stored{
+        place-self: flex-end;
+        vertical-align: bottom;
+        padding: 1rem 2rem 1rem 1rem;
+        font-size: small;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(228, 56%, 26%);
+        color: white;
+        border-radius: 5px;
+        width: 300px;
+    }
+    .loading-container{
+        position: relative;
+        width: 100%;
+        height: 12px;
+        background-color:hsl(229, 57%, 11%);
+        border-radius: 35px;
+        padding: 3px;
+    }
+    .loading{
+        position: relative;
+        border-radius: 35px;
+        background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+        width:70% ;
+        height: 100%;
+    }
+    .float-left{
+        float: left;
+    }
+    .float-right{
+        float: right;
+    }
+    .clear{
+        clear: both;
+    }
 }
